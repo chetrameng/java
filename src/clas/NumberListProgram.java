@@ -8,7 +8,7 @@ public class NumberListProgram {
 
         System.out.println("Enter numbers (enter 'done' to finish):");
 
-        double[] numbers = new double[1]; // Start with an array of size 1
+        double[] numbers = new double[1]; 
         int count = 0;
 
         while (true) {
@@ -19,7 +19,7 @@ public class NumberListProgram {
             try {
                 double number = Double.parseDouble(input);
                 if (count == numbers.length) {
-                    // Resize the array when it's full
+                  
                     double[] temp = new double[numbers.length * 2];
                     System.arraycopy(numbers, 0, temp, 0, numbers.length);
                     numbers = temp;
